@@ -1,7 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's Resume-folio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header, section {
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background: #f4f4f4;
+            text-align: center;
+        }
+        section {
+            background: #fff;
+        }
+        h1 {
+            margin: 0;
+            padding: 10px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .gradient-boxes {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .gradient-box-wrapper {
+            text-align: center;
+        }
+        .gradient-box {
+            width: 100px;
+            height: 400px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .box1 {
+            background: linear-gradient(red, blue);
+        }
+        .box2 {
+            background: linear-gradient(in lch, red, blue);
+        }
+        .box3 {
+            background: linear-gradient(blue, green);
+        }
+        .box4 {
+            background: linear-gradient(in lch, blue, green);
+        }
+        .box5 {
+            background: linear-gradient(green, red);
+        }
+        .box6 {
+            background: linear-gradient(in lch, green, red);
+        }
+        .label {
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <header>
+            <h1>Justin Ward</h1>
+            <p>Software Developer</p>
+            <p>Email: carotid-heroic.Oo@icloud.com</p>
+            <p>Phone: (385) 204-3055</p>
+        </header>
+        <section>
+            <h2>About Me</h2>
+            <p>I am a passionate software developer with experience in building web applications. I love to learn and experiment with new technologies.
+                Focusing on one thing at a time until I gain some level of competence of my own satisfaction.</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>Currently working on a Bachelor of Science in Computer Science, Utah Valley University, 2024+</li>
+                <li>High School Diploma, Carbon High School, 2013</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li>Team Lead in Facility Services</li>
+                <li>Self taught programming projects</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Lua</li>
+                <li>Java</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Pico 8 Click Squares:</strong> A small pipe-puzzle game made in the Pico 8 fantasy console.</li>
+                <li><strong>Pico 8 All Natural Farming:</strong> A small fast paced survival farming game made in Pico 8</li>
+            </ul>
+        </section>
+
+         <!-- Gradient Boxes Section -->
+         <div class="gradient-boxes">
+            <div class="gradient-box-wrapper">
+                <div class="label">RGB</div>
+                <div class="gradient-box box1"></div>
+            </div>
+            <div class="gradient-box-wrapper">
+                <div class="label">LCH</div>
+                <div class="gradient-box box2"></div>
+            </div>
+            <div class="gradient-box-wrapper">
+                <div class="label">RGB</div>
+                <div class="gradient-box box3"></div>
+            </div>
+            <div class="gradient-box-wrapper">
+                <div class="label">LCH</div>
+                <div class="gradient-box box4"></div>
+            </div>
+            <div class="gradient-box-wrapper">
+                <div class="label">RGB</div>
+                <div class="gradient-box box5"></div>
+            </div>
+            <div class="gradient-box-wrapper">
+                <div class="label">LCH</div>
+                <div class="gradient-box box6"></div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="showMessage()">Click Me!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
