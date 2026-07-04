@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #f8f8f8;
+    color:#1D2B53;
 }
 .container {
     width: 80%;
@@ -38,8 +39,8 @@ ul {
     list-style: none;
     padding: 0;
 }
-li {
-    margin: 10px 0;
+.skill-columns {
+    column-count: 2;
 }
 .button-container {
     text-align: center;
@@ -57,19 +58,50 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+.art-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+.art-btn:hover {
+    background-color: #0056B3;
+}
+
+.game-link {
+    color: #FFF1E8;
+    text-decoration: none;
+    background-color: #FF004D;
+    border: none;
+    padding: 3px 10px;
+}
+.game-link:hover {
+    background-color: #7E2553;
+}
+.game-list li:not(:last-child) {
+    border-bottom: 1px solid #1D2B53;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
 .gradient-boxes {
     display: flex;
+    gap: 10px;
     justify-content: space-around;
-    margin: 20px 0;
 }
 .gradient-box-wrapper {
+    flex: 1;
     text-align: center;
 }
 .gradient-box {
-    width: 100px;
     height: 400px;
     border-radius: 8px;
-    margin-bottom: 10px;
 }
 .box1 {
     background: linear-gradient(red, blue);
