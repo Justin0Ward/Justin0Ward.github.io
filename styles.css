@@ -26,7 +26,14 @@ body {
 .scroll-container {
     display: flex;
     flex-wrap: nowrap;
-    overflow: auto;
+    overflow-x: auto;
+
+    width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    justify-content: center;
 }
 .scroll {
     margin: 5px;
