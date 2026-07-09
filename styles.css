@@ -2,6 +2,12 @@
     --primary-dark: #1D2B53;
     --primary-highlight: #FF004D;
     --secondary-highlight: #7E2553;
+    --highlight-color: #FFF1E8;
+    --far-background: #f8f8f8;
+    --container-background: #fff;
+    --header-border: #ccc;
+    --header-background: #f4f4f4;
+    --box-shadow: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -11,16 +17,16 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #f8f8f8;
+    background-color: var(--far-background);
     color: var(--primary-dark);
 }
 .container {
     width: 80%;
     max-width: 800px;
-    background-color: #fff;
+    background-color: var(--container-background);
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--box-shadow);
     border-radius: 8px;
 }
 .scroll-container {
@@ -52,17 +58,17 @@ img:hover {
 header, section {
     padding: 20px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid var(--header-border);
     border-radius: 8px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 12px var(--box-shadow);
 }
 header {
-    background: #f4f4f4;
+    background: var(--header-background);
     text-align: center;
     line-height: 0.5;
 }
 section {
-    background: #fff;
+    background: var(--container-background);
 }
 h1 {
     margin: 0;
@@ -98,7 +104,7 @@ button:hover {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007BFF;
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     font-family: Arial, sans-serif;
@@ -110,7 +116,7 @@ button:hover {
     background-color: #0056B3;
 }
 .game-link {
-    color: #FFF1E8;
+    color: var(--highlight-color);
     text-decoration: none;
     background-color: var(--primary-highlight);
     border: none;
@@ -162,6 +168,6 @@ button:hover {
 
 @media (max-width: 600px) {
     .container {
-        width: 100%;
+        width: 95%;
     }
 }
